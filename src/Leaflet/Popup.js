@@ -2,9 +2,11 @@ if (typeof window !== 'undefined') {
     var L = require('leaflet');
 }
 
-exports.bindPopup = 
+exports.bindPopup =
     function (marker) {
         return function (popupContent) {
-            marker.bindPopup(popupContent);
+            return function () {
+                marker.bindPopup(popupContent);
+            }
         }
     }
