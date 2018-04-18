@@ -1,3 +1,5 @@
+var L = require('leaflet');
+
 exports.markerJS =
     function (position) {
         return function (options) {

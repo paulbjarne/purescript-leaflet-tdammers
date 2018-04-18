@@ -1,3 +1,5 @@
+var L = require('leaflet');
+
 exports.map =
     function (domID) {
         return function(latlng) {

@@ -1,3 +1,5 @@
+var L = require('leaflet');
+
 var mkMouseEvent = function (ev) {
     return {
         latlng: ev.latlng,

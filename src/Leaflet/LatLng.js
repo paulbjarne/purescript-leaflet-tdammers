@@ -1,3 +1,5 @@
+var L = require('leaflet');
+
 exports.latlng =
     function (lat) {
         return function (lng) {
