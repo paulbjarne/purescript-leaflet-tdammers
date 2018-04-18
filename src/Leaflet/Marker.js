@@ -1,4 +1,6 @@
-var L = require('leaflet');
+if (typeof window === 'undefined') {
+    var L = require('leaflet');
+}
 
 exports.markerJS =
     function (position) {
